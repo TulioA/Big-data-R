@@ -6,13 +6,13 @@ for (i in 1:(n-1)) {
   {}
   n <- n * i
 }
-print(n)
+n
 print(Sys.time() - ti)
 
 #Ciclo While
 ti <- Sys.time()
 i<-1
-n2<- 5
+n2<- 4
 vfact <- n2
 while(TRUE){
   if(i==n2)
@@ -21,13 +21,15 @@ while(TRUE){
     vfact <- vfact * i
   i <- i + 1
 }
-print(vfact)
+vfact
 print(Sys.time() - ti)
+
 
 #Funcion factorial
 ti <- Sys.time()
-print(factorial(5))
+print(factorial(4))
 print(Sys.time() - ti)
+
 
 #Funcion recursiva
 ti <- Sys.time()
@@ -37,6 +39,6 @@ funcionFacto <- function(nfact){
   else
     return(nfact*funcionFacto(nfact-1))
 }
-funcionFacto(5)
+funcionFacto(4)
 print(Sys.time() - ti)
 
